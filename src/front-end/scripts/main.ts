@@ -2,7 +2,8 @@ import "../index.html";
 import "../main.css";
 
 import { ProductComponent } from './components/product.component';
-import { Products } from './services/fake-product.service';
+// import { Products } from './services/fake-product.service';
+import { Products } from './services/product.service';
 import { Product } from "./interfaces/product.interface";
 
 async function main() {

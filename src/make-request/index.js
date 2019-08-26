@@ -3,6 +3,4 @@ async function makeRequest(url) {
       return response.json()
 }
 
-module.exports = {
-    makeRequest
-}
+module.exports = makeRequest;
