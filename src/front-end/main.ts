@@ -1,5 +1,8 @@
-function test (v:string) {
-    return 123;
+import "./index.html";
+import "./main.css";
+
+function main() {
+    console.log('main');
 }
 
-console.log(test());
+main();

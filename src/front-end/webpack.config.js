@@ -7,6 +7,7 @@ console.log({ dist });
 
 module.exports = {
     entry: entry,
+    mode: 'development',
 
     output: {
         path: dist,
@@ -22,6 +23,17 @@ module.exports = {
             {
                 test: (/\.ts$/),
                 use: 'ts-loader'
+            },
+            {
+                test: (/\.html$/),
+                use: 'file-loader?name=[name].html',
+            },
+            {
+                test: (/\.css$/),
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
             }
         ]
     }

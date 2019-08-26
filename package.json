@@ -5,15 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "front-end:build": "webpack --config src/front-end/webpack.config.js"
+    "prefront-end:build": "rm -rf dist/",
+    "front-end:build": "webpack --config src/front-end/webpack.config.js",
+    "front-end:watch": "npm run front-end:build -- --watch",
+    "front-end:start": "browser-sync start --server --no-ui --no-open --startPath dist/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "typescript": "^3.5.3"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.0.4",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   }
