@@ -1,0 +1,20 @@
+[
+    {
+      "id": "e9954d98-e9bf-566b-9bd0-fcd104b391a8",
+      "name": "Ferrari",
+      "description": "Szybkie włoskie auto.",
+      "imageUrl": "http://api.adorable.io/avatars/100/belide.png"
+    },
+    {
+      "id": "ae078666-fcba-5fa9-b14b-6022f3705ada",
+      "name": "Mortal Combat",
+      "description": "Świetna gra. Bijatyka.",
+      "imageUrl": "http://api.adorable.io/avatars/100/belide.png"
+    },
+    {
+      "id": "0741a74d-a145-58a7-ba97-951b7c9ac2b8",
+      "name": "Fiat",
+      "description": "Super fiat.",
+      "imageUrl": "http://api.adorable.io/avatars/100/belide.gif"
+    }
+  ]
