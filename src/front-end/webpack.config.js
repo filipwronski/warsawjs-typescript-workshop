@@ -1,6 +1,6 @@
 const path = require('path');
 
-const entry = path.join(__dirname, 'main.ts');
+const entry = path.join(__dirname, 'scripts' ,'main.ts');
 console.log({ entry });
 const dist = path.join(__dirname, '..', '..', 'dist');
 console.log({ dist });
