@@ -11,7 +11,7 @@ export class ProductComponent {
 
     template(product: Product) {
         return `
-        <div class="card product">
+        <div class="card">
             <img src="${ product.imageUrl }" class="card-img-top" alt=""/>
             <div class="card-body">
                 <h5 class="card-title">${ product.name }</h5>

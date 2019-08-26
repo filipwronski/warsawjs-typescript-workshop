@@ -4,7 +4,7 @@ import makeRequest from "../../../make-request";
 
 class ProductsService {
     async getProducts() {
-        return makeRequest<ProductList>(config.productsUrl);
+        return makeRequest<ProductList, string>(config.productsUrl);
     }
 }
 
