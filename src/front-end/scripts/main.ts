@@ -1,15 +1,13 @@
 import "../index.html";
 import "../main.css";
 
-import { ProductComponent } from './components/product.component';
-// import { Products } from './services/fake-product.service';
-import { Products } from './services/product.service';
+import { ProductComponent } from "./components/product.component";
 import { Product } from "./interfaces/product.interface";
+// import { Products } from './services/fake-product.service';
+import { Products } from "./services/product.service";
 
 async function main() {
-    console.log('main');
-
-    const $app = document.querySelector<HTMLDivElement>('#app')!;
+    const $app = document.querySelector<HTMLDivElement>("#app")!;
     const products = await Products.getProducts();
 
     products.forEach((product) => {

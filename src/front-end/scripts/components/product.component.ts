@@ -3,7 +3,7 @@ import { log } from "../decorators/log.deccorrator";
 
 export class ProductComponent {
     data: any = null;
-    $el: HTMLElement = document.createElement('div');;
+    $el: HTMLElement = document.createElement("div");
     @log
     template(product: Product) {
         return `
@@ -17,7 +17,7 @@ export class ProductComponent {
                 </button>
             </div>
         </div>
-        `
+        `;
     }
 
     setData<T>(data: Product) {
