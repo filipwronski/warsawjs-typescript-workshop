@@ -1,11 +1,12 @@
 import { Product } from "../interfaces/product.interface";
 import { log } from "../decorators/log.deccorrator";
+import { Component } from "./component";
 
-export class ProductComponent {
+export class ProductComponent extends Component {
     data: any = null;
     $el: HTMLElement = document.createElement("div");
     @log
-    template(product: Product) {
+    protected template(product: Product) {
         return `
         <div class="card product">
             <img src="${ product.imageUrl }" class="card-img-top" alt=""/>

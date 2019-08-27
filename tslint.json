@@ -12,7 +12,8 @@
         "no-console": ["off"],
         "trailing-comma": ["off"],
         "object-literal-sort-keys": ["off"],
-        "space-before-function-paren": ["error", "always"]
+        "space-before-function-paren": ["error", "always"],
+        "no-unused-variable": [true, {"ignore-pattern": "^_"}]
     },
     "rulesDirectory": []
 }
