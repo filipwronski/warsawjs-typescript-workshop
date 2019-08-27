@@ -1,5 +1,5 @@
 import products from "../../../shared/fakes/products.json";
-import { ProductList } from "../interfaces/product-list.interface.js";
+import { ProductList } from "../../../shared/interfaces/product-list.interface";
 class FakeProductService {
 
     async getProducts(): Promise<ProductList> {

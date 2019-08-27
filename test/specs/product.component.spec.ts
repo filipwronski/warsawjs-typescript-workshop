@@ -1,5 +1,5 @@
 import { ProductComponent } from "../../src/front-end/scripts/components/product.component";
-import { Product } from "../../src/front-end/scripts/interfaces/product.interface";
+import { Product } from "../../src/shared/interfaces/product.interface";
 
 describe("ProductComponent", () => {
     let data: Product;

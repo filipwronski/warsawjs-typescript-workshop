@@ -9,13 +9,23 @@
         "front-end:build": "webpack --config src/front-end/webpack.config.js",
         "front-end:watch": "npm run front-end:build -- --watch",
         "front-end:start": "browser-sync start --server --no-ui --no-open --startPath dist/",
-        "front-end:lint": "tslint --project ."
+        "front-end:lint": "tslint --project .",
+        "back-end:build": "ts-node --transpile-only src/backend/main.ts",
+        "back-end:start": "ts-node src/backend/main.ts",
+        "back-end:watch": "ts-node-dev src/backend/main.ts"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@types/cors": "^2.8.6",
+        "@types/express": "^4.17.1",
+        "@types/morgan": "^1.7.37",
         "bootstrap": "^4.3.1",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "morgan": "^1.9.1",
+        "ts-node": "^8.3.0",
         "typescript": "^3.5.3"
     },
     "devDependencies": {
@@ -31,6 +41,7 @@
         "style-loader": "^1.0.0",
         "ts-jest": "^24.0.2",
         "ts-loader": "^6.0.4",
+        "ts-node-dev": "^1.0.0-pre.42",
         "tslint": "^5.19.0",
         "webpack": "^4.39.2",
         "webpack-cli": "^3.3.7"
