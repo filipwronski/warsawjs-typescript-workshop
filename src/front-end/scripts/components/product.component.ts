@@ -1,9 +1,10 @@
 import { Product } from "../interfaces/product.interface";
+import { log } from "../decorators/log.deccorrator";
 
 export class ProductComponent {
     data: any = null;
     $el: HTMLElement = document.createElement('div');;
-
+    @log
     template(product: Product) {
         return `
         <div class="card product">
